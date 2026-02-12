@@ -1,0 +1,6 @@
+Download the latest Tasmota release Source code from
+    https://github.com/arendst/Sonoff-Tasmota/releases
+    in particolare:
+        https://github.com/arendst/Sonoff-Tasmota/releases/download/v6.6.0/sonoff.bin
+        https://github.com/arendst/Sonoff-Tasmota/releases/download/v6.6.0/sonoff-basic.bin
+        https://github.com/arendst/Sonoff-Tasmota/releases/download/v6.6.0/sonoff-IT.bin
