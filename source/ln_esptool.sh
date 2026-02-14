@@ -24,10 +24,27 @@ function parseInput() { # solo per console
 }
 
 
+function checkPort() {
+    local port_number="${1:-11}"
+    if [[ $port_number =~ ^[0-2]+$ ]]; then
+        return 0
+    else
+        echo "Enter a valid number for usb port [0-2]"
+        return 1
+    fi
+}
 
 function read() {
     set -u
     local port_number="${1:-11}"
+    if checkPort "$port_number"; then
+        echo "port ok"
+    else
+        echo "port bad"
+    fi
+
+    exit
+
     local image_file="${2:-"undefined"}"
 
     [[ $port_number =~ ^[0-2]+$ ]] || { echo "Enter a valid number for usb port [0-2]"; return; }
